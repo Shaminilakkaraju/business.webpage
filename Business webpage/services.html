@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+  background-color:black;
+  color:white;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: white;
+  background-color: black;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius:auto;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="ibm.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>
+                <h4>Cloud Computing Solutions</h4>
+                <p>Unlock the full potential of your business with our comprehensive cloud computing solutions. From infrastructure as a service (IaaS) to software as a service (SaaS), we offer scalable and secure cloud solutions tailored to your needs.</p>
+            </li>
+            <li>
+                <h4>Artificial Intelligence and Data Analytics</h4>
+                <p>Gain actionable insights and drive business growth with our advanced artificial intelligence and data analytics solutions. Harness the power of AI and machine learning to optimize processes, improve decision-making, and uncover valuable business intelligence.</p>
+            </li>
+            <li>
+                <h4>Cybersecurity Services</h4>
+                <p>Protect your business from cyber threats and ensure data security with our comprehensive cybersecurity services. From risk assessment and threat detection to incident response and compliance management, we offer end-to-end cybersecurity solutions to safeguard your digital assets.</p>
+            </li>
+            <li>
+                <h4>Blockchain Technology</h4>
+                <p>Transform your business operations and drive transparency and trust with our blockchain technology solutions. Explore new possibilities in supply chain management, identity verification, and decentralized finance with our innovative blockchain solutions.</p>
+            </li>
+        </ul>
+    </section> 
+    <section class="services">
+        <h4>Reach out for our Services</h4>
+        <form action="submit.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required> 
+            <input type="email" name="email" placeholder="Your Email" required> 
+            <textarea name="message" placeholder="Your Message" required></textarea> <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+<footer>
+    <p>&copy; 2024 IBM. All rights reserved.</p>
+</footer>
+</html>

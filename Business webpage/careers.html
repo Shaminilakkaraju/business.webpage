@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>careers at IBM</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+  background-color:black;
+  color:white;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: white;
+  background-color: black;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="ibm.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="careers">
+        <h2>Careers</h2>
+        <div class="job-openings">
+            <h3>Current Job Openings</h3>
+            <ul>
+                <li>Software Engineer - AI & Machine Learning</li>
+                <li>Data Scientist</li>
+                <li>Cloud Solutions Architect</li>
+            </ul>
+        </div>
+        <div class="application-form">
+            <h3>Apply Now</h3>
+            <form action="submit_application.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <select name="job_position" required>
+                    <option value="" disabled selected>Select a Job Position</option>
+                    <option value="Software Engineer - AI & Machine Learning">Software Engineer - AI & Machine Learning</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Cloud Solutions Architect">Cloud Solutions Architect</option>
+                </select>
+                <textarea name="cover_letter" placeholder="Your Cover Letter" required></textarea> <br> <BR></BR>
+                <input type="file" name="resume" accept=".pdf,.doc,.docx" required> <br> <br>
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 IBM. All rights reserved.</p>
+    </footer>
+</body>
+</html>
